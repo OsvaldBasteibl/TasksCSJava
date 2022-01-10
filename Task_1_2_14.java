@@ -1,12 +1,9 @@
-import java.util.Scanner;
-
 public class Task_1_2_14 {
     public static void main(String[] args) {
         int a, b;
         boolean result;
-        Scanner input = new Scanner(System.in);
-        a = input.nextInt();
-        b = input.nextInt();
+        a = (int)(Math.random() * 100);
+        b = (int)(Math.random() * 100);
         result = a % b == 0 || b % a == 0;
         System.out.println(result);
     }
